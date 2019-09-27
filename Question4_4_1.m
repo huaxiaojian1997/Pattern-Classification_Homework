@@ -1,0 +1,14 @@
+x=-400:1:400;
+% z1=10;
+% z2=50;
+z3=100;
+plot(x,exp(-1/2*x.^2)/(2*pi).^0.5); 
+hold on;
+% plot(x,exp(-1/(2*z1.^2)*x.^2)/(2*pi*z1.^2).^0.5); 
+% plot(x,exp(-1/(2*z2.^2)*x.^2)/(2*pi*z2.^2).^0.5); 
+plot(x,exp(-1/(2*z3.^2)*x.^2)/(2*pi*z3.^2).^0.5); 
+xlabel('x');
+ylabel('P(X|L=i)');
+title('¦Ò=100,a plot of P(X|L=1) and P(X|L=2)');
+gtext('P(X|L=1)');
+gtext('P(X|L=2)');
