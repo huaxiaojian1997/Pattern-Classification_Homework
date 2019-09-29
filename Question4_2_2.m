@@ -2,7 +2,6 @@ syms x;
 ezplot('2.^0.5*exp(-1/2*x.^2)/(2.^0.5*exp(-1/2*x.^2)+exp(-1/4*(x-1).^2))');
 hold on;
 ezplot('exp(-1/4*(x-1).^2)/(2.^0.5*exp(-1/2*x.^2)+exp(-1/4*(x-1).^2))');
-axis([-4,4,-4,4]);
 xlabel('x');
 ylabel('P(L=i|X)');
 title('a plot of P(L=1|X) and P(L=2|X)');
