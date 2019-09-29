@@ -1,7 +1,8 @@
-x=-8:0.1:8;
-plot(x,exp(-1/2*x.^2)/(8*pi).^0.5); 
+syms x;
+ezplot('2.^0.5*exp(-1/2*x.^2)/(2.^0.5*exp(-1/2*x.^2)+exp(-1/4*(x-1).^2))');
 hold on;
-plot(x,exp(-1/4*(x-1).^2)/(16*pi).^0.5); 
+ezplot('exp(-1/4*(x-1).^2)/(2.^0.5*exp(-1/2*x.^2)+exp(-1/4*(x-1).^2))');
+axis([-4,4,-4,4]);
 xlabel('x');
 ylabel('P(L=i|X)');
 title('a plot of P(L=1|X) and P(L=2|X)');
