@@ -1,5 +1,5 @@
 x=-10:0.1:10;
-plot(x,log(2)+abs(x-1)/2+abs(x)); 
+plot(x,log(2)+abs(x-1)/2-abs(x)); 
 grid on; 
 xlabel('x');
 ylabel('l(x)');
